@@ -1,0 +1,389 @@
+#panel {
+    visibility: hidden;
+    position: fixed;
+    display: flex;
+    left: 95px;
+    top: 85px;
+    box-shadow: 0 0 14px 0 rgba(22, 45, 61, 0.36);
+    height: 521px;
+    z-index: 9999;
+}
+
+
+/* Panel Header */
+.panel-header {
+    font-weight: bold;
+    font-size: large;
+    padding-left: 15px;
+    line-height: 2;
+}
+
+hr{
+    border: 0.4px solid white;
+    width: 90%;
+}
+
+.close_panel_btn{
+    color: #3899ec;
+    background-color: white;
+    font-size: x-large;
+    position: absolute;
+    right: 0px;
+    border-radius: 15px;
+    cursor: pointer;
+    padding-right: 10px;
+    padding-top: 6px;
+}
+
+
+/* CATEGORY LIST */
+#categories{
+    color: white;
+    background-color: #3899ec;
+}
+
+.category-list, .sub-category-list, .cart-list{
+    list-style-type: none;
+    padding-inline-start: 15px; /* override ul default style (40px) */
+    padding-inline-end: 15px;
+}
+
+.category-list li, .sub-category-list li{
+    margin-top: 10px;
+    padding: 5px;
+}
+
+.category-list li:hover{
+    color: #3899ec;
+    background-color: white;
+    cursor: pointer;
+}
+
+.selected_category{
+    color: #3899ec;
+    background-color: white;
+}
+
+.category-list li span, .sub-category-list li span{
+    padding-right: 30px;
+    
+}
+
+.category-list li i{
+    float: right;
+    line-height: 1.7; /* override li default style (1) */   
+}
+
+/* SUB CATEGORIES */
+#sub-categories{
+    color: #395671;
+    background-color: white;
+    width: 400px;
+}
+
+#sub-categories ul li{
+    display: block;
+}
+
+#sub-categories ul li span{
+    display: block;
+}
+
+#sub-categories hr{
+    border-color: #395671;
+}
+
+.sub-category-list{
+    overflow-y: scroll;
+    overflow-x: hidden;
+    height: 469px;
+    margin: auto 0 auto 0;  
+}
+
+.sub-category-list span{
+    font-size:14px ;
+    font-weight: bold;
+}
+
+.sub-category-list hr{
+    width: 100%;
+}
+
+/* SUB CATEGORIES / Scrollbar  */
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+} 
+
+::-webkit-scrollbar-thumb {
+    background: #dadada; 
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #cecece; 
+}
+
+
+/* MY CART */
+#my-cart{
+    color: #395671;
+    background-color:#F1F8FF;
+    width:320px;
+}
+
+#my-cart hr{
+    border-color: #395671;
+    opacity: 0.1;
+}
+
+.myCartIcon{
+    float: right;
+    padding-left: 10px;
+}
+
+.cart-list hr{
+    width: 100%;
+}
+
+.cart-list li{
+    list-style-type: none;
+    display: list-item;
+}
+
+.trashIcon{
+    float: right;
+    color: #395671;
+    background-color: #F1F8FF;
+    border: none;
+    outline: none;
+}
+
+.trashIcon:hover{
+    cursor: pointer;
+    color:#3899ec;
+}
+
+.myCart-BTN{
+    text-align: center;
+    position: absolute;
+    bottom: 15px;
+    padding-left: 127px;
+}
+
+.add-to-webBTN{
+    background-color: #3899ec;
+    color: white;
+    text-decoration: none;
+    border: none;
+    padding: 10px;
+    position: relative;
+    width: 250px;
+    right: 93px;
+}
+
+.add-to-webBTN:hover{
+    cursor: pointer;
+    background-color: #2b8bdf;
+}
+
+
+
+/* Images Design */
+
+.upload-image-design, .collections-image-design, .social-image-design{
+    display: flex;
+    margin: auto auto 10px 0;
+}
+
+.img-size{
+    width: 111px;
+}
+
+.img-size-stage{
+    display: inline-block;
+    width: 60px;
+}
+
+.upload-image-design p, .collections-image-design p, .social-image-design p {
+    font-size: 14px;
+    padding:0 10px 0 10px;
+    color:#395671 ;
+}
+
+.upload-image-design span, .collections-image-design span, .social-image-design span {
+    font-size: 14px;
+    font-weight:bolder;
+    padding-bottom: 10px;
+}
+
+.upload-image-design i, .collections-image-design i, .social-image-design i{
+    color: #395671;
+    line-height: 7;
+
+}
+
+.upload-image-design:hover, .collections-image-design:hover, .social-image-design:hover{
+    background-color:#F1F8FF;
+    cursor: pointer;
+}
+
+.upload-image-design:hover img, .collections-image-design:hover img, .social-image-design:hover img{ 
+    opacity: 0.3;
+}
+
+.img-size:hover, .img-size-stage:hover{
+    cursor: pointer;
+}
+
+
+
+/* Buttons Design */
+
+.themedBTN-design, .textBTN-design, .iconBTN-design{
+    margin: 15px 15px 10px 0;  
+    outline: none;
+    position: relative;
+}
+
+.themedBTN-design{
+    width: 100px;
+    background-color: darkcyan;
+    color: white;
+    border: thin;
+    height: 40px;
+}
+
+.add-to-cart-icon {
+    visibility: hidden;
+    position: absolute;
+    z-index: 5;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: #3899ec;
+    background-color: white;
+    border-radius: 15px;
+    font-size: x-large;
+}
+
+.add-to-cart-icon-img {
+    visibility: hidden;
+    position: relative;
+    z-index: 5;
+    left: -78px;
+    top: 43px;
+    color: #3899ec !important;
+    background-color: white;
+    border-radius: 20px;
+    font-size: 35px;
+    height: 35px;
+    line-height: 1 !important;
+}
+
+.textBTN-design{
+    background-color: coral;    
+    color: white;
+    border: thin;
+    height: 40px;
+    padding: 10px;
+}
+
+.iconBTN-design{
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    background-color: blueviolet;
+    color: white;
+    border: thin;
+    font-size: medium;
+    text-align: center;
+}
+
+.themedBTN-design:hover, .textBTN-design:hover, .iconBTN-design:hover{
+    background-color: #ddd;
+    cursor: pointer;
+}
+
+
+/* Dropdown Design */
+
+.dropbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px;
+    border: none;
+    width: 250px;
+    text-align: left;
+    margin: 15px 15px 10px 0;
+    position: relative;
+    outline: none;
+}
+
+.menu-arrow{
+    float: right;
+}
+  
+.dropdown-text, .dropdown-Menu {
+    position: relative;
+    display: inline-block;
+    margin: auto auto 10px 0;
+}
+  
+.dropdown-content {
+    display: none;
+    position: absolute;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 999;
+    width: 250px;
+    background-color: white;
+}
+  
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropbtn-menu{
+    max-width: 50px;
+    text-align: center;
+}
+.dropbtn-menu .dropdown-content{
+    max-width: 100px;
+}
+
+  
+.dropdown-content a:hover {
+    background-color: #ddd;
+    cursor: pointer;
+}
+  
+.dropdown-text:hover .dropdown-content, .dropdown-Menu:hover .dropdown-content {
+    display: block;
+    cursor: pointer;
+}
+  
+.dropdown-text:hover .dropbtn, .dropdown-Menu:hover .dropbtn {
+    background-color: #cecece;
+    cursor: pointer;
+}
+
+.dropdown-Menu .dropdown-content a i{
+    margin-right: 10px;
+}
+
+/* STAGE */
+
+.drop-elements {
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin: 15px;
+    z-index: -5;
+}

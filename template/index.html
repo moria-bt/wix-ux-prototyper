@@ -6,11 +6,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Stage Template | 6.2019</title>
+  <!-- Bootstrap -->
+  <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"> -->
+
+
   <link rel="stylesheet" href="./assets/css/normalize.css">
   <link rel="stylesheet" href="./assets/css/fonts.css">
   <link rel="stylesheet" href="./assets/css/variables.css">
   <link rel="stylesheet" href="./assets/css/ptyp.css">
   <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="./assets/css/panel.css">
+  <link rel="stylesheet" href="./assets/css/stage.css">
+  <!-- FONT AWESOME -->
+  <script src="https://kit.fontawesome.com/8b4bf52dca.js" crossorigin="anonymous"></script>
+
 </head>
 
 <body class="text-HelveticaNeueW01-45Light">
@@ -140,16 +149,68 @@
         </span>
       </div>
 
+      <!-- LEFT BAR PANEL -->
+
+      <div id="panel">
+        
+        <div id="categories">
+          <span class="panel-header">Add</span>
+          <hr>
+          <ul class="category-list"></ul>
+        </div>
+
+        <div id="sub-categories">
+          <span class="panel-header">Add a Button</span>
+          <hr>
+          <ul class="sub-category-list">
+            
+          </ul>
+        </div>
+        
+        <div id="my-cart">
+          <div>
+            <span class="panel-header">My Cart</span>
+            <span class="panel-header">(0/5)</span>
+          </div>
+          <hr>
+          <ul class="cart-list">
+
+          </ul>
+          <div class="myCart-BTN">
+            <button type="button" class="add-to-webBTN" onclick="add_elements_to_stage()">Add to my Website</button>
+          </div>   
+        </div>
+        <i class="fas fa-times-circle close_panel_btn" onclick="close_add_panel()"></i>
+
+      </div>
+      <!-- ENDOF LEFT BAR PANEL -->
+
+
 
 
     </div>
     <!-- ENDOF LEFT BAR -->
 
+
+
+
+
     <!-- STAGE -->
-    <div class="stage"></div>
+    <div class="stage">
+
+
+    </div>
   </main>
-
-
+    <!-- Bootstrap -->
+    <!-- <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script> -->
+    <!-- Javascript files -->
+  <script src="assets/js/panel_elements.js"></script>
+  <script src="assets/js/stage.js"></script>
+  <script src="assets/js/panel.js"></script>
 </body>
+
+
 
 </html>
