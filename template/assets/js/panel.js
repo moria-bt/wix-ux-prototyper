@@ -3,7 +3,7 @@
 */
 
 
-window.onload = (event) => {
+window.onload = function() {
     add_categories(CATEGORIES, CONST.IMG);
     add_panel_to_leftbar("leftbar-item-add", open_add_panel);
     allow_drop(document.getElementsByClassName("stage")[0]);
