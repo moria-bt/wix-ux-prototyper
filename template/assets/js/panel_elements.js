@@ -24,7 +24,7 @@ var CATEGORIES = [
 ];
 
 var ADD_TO_CART_ICON = {
-    icon: "<i class='fas fa-plus-circle add-to-cart-icon'></i>",
+    icon: "<i class='fas fa-plus-circle add-to-cart-icon' title='Add to My Cart'></i>",
     default_class: "fas fa-plus-circle",
     class: "fas fa-plus-circle add-to-cart-icon",
     class_img: "fas fa-plus-circle add-to-cart-icon-img"

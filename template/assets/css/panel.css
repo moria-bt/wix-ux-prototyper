@@ -285,7 +285,7 @@ hr{
 }
 
 .textBTN-design{
-    background-color: coral;    
+    background-color: #173F5F;    
     color: white;
     border: thin;
     height: 40px;
@@ -312,7 +312,7 @@ hr{
 /* Dropdown Design */
 
 .dropbtn {
-    background-color: #4CAF50;
+    background-color: #7e4565;
     color: white;
     padding: 12px;
     border: none;

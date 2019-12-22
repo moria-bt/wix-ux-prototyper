@@ -287,6 +287,7 @@ function add_element_to_cart(event) {
         var element = strip_element(event.target.parentNode);
         var trash_btn = document.createElement("i");
         trash_btn.setAttribute("class", TRASH_ICON.class);
+        trash_btn.setAttribute("title", "Delete from My Cart");
         trash_btn.addEventListener("click", delete_element_from_cart);
         var hr = document.createElement("hr");
         li.appendChild(element);
